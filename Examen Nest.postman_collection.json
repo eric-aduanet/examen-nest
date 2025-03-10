@@ -1,0 +1,252 @@
+{
+	"info": {
+		"_postman_id": "ec7857a2-d49a-4c49-a19b-42bbf44a457e",
+		"name": "Examen Nest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "42343990"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/zapatos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos",
+						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateShoe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Nike Air Force\",\n    \"brand\": \"Nike\",\n    \"price\": 125,\n    \"size\": 13,\n    \"stock\": 3,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/zapatos/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RestockShoe",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/zapatos/restock",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos",
+						"restock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateShoe",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos",
+						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteShoe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"zapatos",
+						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllPurchases",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ventas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ventas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateNewPurchase",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ventas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ventas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPurchaseDetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ventas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ventas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
