@@ -26,18 +26,30 @@
 		},
 		{
 			"name": "GetById",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"raw": "localhost:3000/zapatos/[[[REEMPLAZAR POR UUID AQUI]]]",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"zapatos",
-						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+						"[[[REEMPLAZAR POR UUID AQUI]]]"
 					]
 				}
 			},
@@ -50,7 +62,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Nike Air Force\",\n    \"brand\": \"Nike\",\n    \"price\": 125,\n    \"size\": 13,\n    \"stock\": 3,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"raw": "{\n    \"name\": \"Rositas\",\n    \"brand\": \"Reebok\",\n    \"price\": 100,\n    \"size\": 5,\n    \"gender\": \"Mujer\",\n    \"category\": \"Deportivo\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -78,7 +90,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\":\n}",
+					"raw": "{\n    \"id\": \"043a7c78-56ad-4ac9-a8f2-695a63b9ce6b\",\n    \"stock\": 10\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -106,7 +118,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"raw": "{\n    \"size\": 9\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,14 +126,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"raw": "localhost:3000/zapatos/[[[REEMPLAZAR UUID AQUI]]]",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"zapatos",
-						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+						"[[[REEMPLAZAR UUID AQUI]]]"
 					]
 				}
 			},
@@ -142,14 +154,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/zapatos/6a48782a-df9e-4668-9e8f-998aec2206cf",
+					"raw": "localhost:3000/zapatos/[[[REEMPLAZAR UUID AQUI]]]",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"zapatos",
-						"6a48782a-df9e-4668-9e8f-998aec2206cf"
+						"[[[REEMPLAZAR UUID AQUI]]]"
 					]
 				}
 			},
@@ -157,6 +169,36 @@
 		},
 		{
 			"name": "GetAllPurchases",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/ventas",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPurchaseById",
 			"protocolProfileBehavior": {
 				"disableBodyPruning": true
 			},
@@ -188,15 +230,12 @@
 		},
 		{
 			"name": "CreateNewPurchase",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"raw": "{\n    \"shoeId\": \"043a7c78-56ad-4ac9-a8f2-695a63b9ce6b\",\n    \"quantity\": 7\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -204,14 +243,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/ventas/1",
+					"raw": "localhost:3000/ventas/",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"ventas",
-						"1"
+						""
 					]
 				}
 			},
@@ -227,7 +266,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"name\": \"Renombrado\",\n    \"brand\": \"Cambiado\",\n    \"price\": 125,\n    \"size\": 13,\n    \"gender\": \"hombre\",\n    \"category\": \"Deportivo\"\n}",
+					"raw": "{\n    //\"brand\": [\"Adidas\"],\n    //\"gender\": [\"Mujer\"],\n    //\"category\": [\"Casual\"]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -235,14 +274,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:3000/ventas/1",
+					"raw": "localhost:3000/ventas/detalles",
 					"host": [
 						"localhost"
 					],
 					"port": "3000",
 					"path": [
 						"ventas",
-						"1"
+						"detalles"
 					]
 				}
 			},

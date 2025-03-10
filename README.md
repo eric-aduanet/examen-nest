@@ -32,6 +32,18 @@ yarn
 docker-compose up -d
 ```
 
+4. Iniciar el servidor de nest.
+
+```bash
+yarn start:dev
+```
+
+ó
+
+```bash
+npm run start:dev
+```
+
 4. Importar la colección de Postman (lleva el nombre "Examen Nest.postman_collection.json").
 
 5. Realizar peticiones por medio de postman.
